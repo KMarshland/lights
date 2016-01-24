@@ -9,6 +9,8 @@ A few cool things worth noting:
 - Because it uses websockets, it's super low latency
 - It can scale to an arbitrary number of servers and still hold connections to all clients
 
+This is a stripped down version with just the core functionality. One could add a whole slew of other features built on this, such as user authorization or various light effects (strobe, dimming, etc).
+
 ## How to run server
 Run `foreman start -f Procfile.dev`
 Navigate to http://localhost:3000
