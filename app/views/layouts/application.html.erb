@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lights</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="container">
+
+  <header>
+    <div class="width">
+
+      <h1 class="home-link"><a href="/">Lights</a></h1>
+    </div>
+  </header>
+
+
+  <div id="intro">
+
+    <div class="width">
+
+      <div class="intro-content">
+        <h2><%= yield :title %></h2>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div id="body">
+    <div class="width">
+      <section id="content" class="one-column">
+
+        <article>
+          <%= yield %>
+        </article>
+      </section>
+
+      <div class="clear"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.lights {
+  text-align: center;
+
+  .row {
+    margin-top: 2em;
+  }
+
+  input[type=checkbox] {
+    display:none;
+  }
+
+  input[type=checkbox] + label
+  {
+    height: 180px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+
+    background: asset-url('bulboff.gif');
+  }
+  input[type=checkbox]:checked + label
+  {
+    background: asset-url('bulbon.gif');
+  }
+
+  .no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+  }
+}

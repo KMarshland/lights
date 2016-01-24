@@ -1,0 +1,14 @@
+<div class="lights">
+  <div class="row">
+    <input type="checkbox" name="on" id="on" <%= @checked ? 'checked="checked"' : '' %> >
+    <label for="on">
+    </label>
+  </div>
+  <div class="row no-select">
+    Click the lightbulb to turn it on or off.
+  </div>
+</div>
+
+<script>
+  initializeLightWebsocket();
+</script>
